@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RECALL - Remember what matters.">
+  <title>RECALL | Remember What Matters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background"></div>
+
+  <main class="container">
+
+    <header class="hero">
+      <div class="logo">RECALL</div>
+      <p>Remember what matters.</p>
+    </header>
+
+    <section class="card">
+
+      <div class="search-box">
+        <span>⌕</span>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search your memories..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="form">
+
+        <input
+          id="title"
+          type="text"
+          placeholder="Memory title"
+          maxlength="100"
+        >
+
+        <textarea
+          id="content"
+          placeholder="Write something you want to remember..."
+          maxlength="1000"
+        ></textarea>
+
+        <button id="save">
+          + Save Memory
+        </button>
+
+      </div>
+
+    </section>
+
+    <section class="memory-section">
+
+      <div class="section-header">
+        <h2>Your Memories</h2>
+        <span id="counter">0 memories</span>
+      </div>
+
+      <div id="notes" class="notes"></div>
+
+      <div id="empty" class="empty">
+        <div class="empty-icon">✦</div>
+        <h3>No memories yet</h3>
+        <p>Create your first memory above.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>RECALL © 2026 · Your memories, stored locally.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
 
